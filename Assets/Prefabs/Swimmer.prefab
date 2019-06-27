@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 784325883913142589}
   m_Layer: 0
   m_Name: Swimmer
-  m_TagString: Untagged
+  m_TagString: Swimmers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe28fc4336df6040b992f07fca2c149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!54 &784325883913142589
 Rigidbody:
   m_ObjectHideFlags: 0

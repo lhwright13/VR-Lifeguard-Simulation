@@ -14,24 +14,6 @@ public class PeopleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            Debug.Log("this works");
-            rb.isKinematic = false;
-        }
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            Debug.Log("this works");
-            rb.isKinematic = true;
-        }
-    }
-    private void Ontriggerstay(Collision collision)
-    {
-        Debug.Log("collison");
-    }
-    private void OntriggerExit(Collision collision)
-    {
-        Debug.Log("collison done");
-        rb.isKinematic = true;
+
     }
 }

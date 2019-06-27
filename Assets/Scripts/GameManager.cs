@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    //https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
     // Start is called before the first frame update
     private GameObject[] people;
 
     void Start()
     {
-        people = GameObject.FindGameObjectsWithTag("Swimmers");
-        //init player location
-        //start coroutine for drowning player
+        //start coroutine for drowning player between 2 and 10 seconds
         Invoke("Drown", Random.Range(2f, 10f));
     }
 
@@ -23,7 +20,18 @@ public class GameManager : MonoBehaviour
     }
     private void Drown()
     {
-        people[Random.Range(0, people.Length - 1)].tag = "Drowning";
+        //getting the array here because if we get it at the start,
+        //no swimmers have been made yet and we get empty array.
+        people = GameObject.FindGameObjectsWithTag("Swimmers");
+
+        //getting a random index in the array range
+        int personIndex = Random.Range(0, people.Length - 1);
+        //changing that swimmers tag to drawning
+        people[personIndex].tag = "Drowning";
+
+        //turning them green for testing.
+        Renderer rend = people[personIndex].GetComponent<Renderer>();
+        rend.material.SetColor("_Color", Color.green);
     }
 
 }

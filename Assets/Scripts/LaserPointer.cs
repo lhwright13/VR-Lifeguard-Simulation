@@ -19,9 +19,11 @@ public class LaserPointer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //adding the lihe Renderer to the game object
         LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
         lineRenderer.material = laserMaterial;
         lineRenderer.widthMultiplier = 0.02f;
+        //2 becasue the start and end position
         lineRenderer.positionCount = 2;
 
         laserPoint = Instantiate(laserPointPrefab);
