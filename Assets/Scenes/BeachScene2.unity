@@ -5374,6 +5374,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 715560810}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &727248946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1893138394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &727248950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727248946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e8695cab783cd408e34b393edc6933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserMaterial: {fileID: 2100000, guid: 4e93acacb7ca529459630b12c5499ed9, type: 2}
+  laserPointPrefab: {fileID: 6782366602403369761, guid: bd77c2cbd90797e4ca2a97e9a8c1dc31,
+    type: 3}
+  indicatorPrefab: {fileID: 6417632171565950247, guid: 2a39c04f1ea3b0a41b5733bfb0ffbb7b,
+    type: 3}
 --- !u!1001 &727919824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13127,6 +13150,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f27d280e43fabe64db8c2796cfc1e0ba, type: 3}
+--- !u!1001 &1893138394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1001 &1906210239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14215,14 +14279,13 @@ GameObject:
   - component: {fileID: 2086491953}
   - component: {fileID: 2086491952}
   - component: {fileID: 2086491951}
-  - component: {fileID: 2086491954}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &2086491951
 AudioListener:
   m_ObjectHideFlags: 0
@@ -14288,23 +14351,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20.52, y: 0, z: 0}
---- !u!114 &2086491954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086491950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5e8695cab783cd408e34b393edc6933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserMaterial: {fileID: 2100000, guid: 4e93acacb7ca529459630b12c5499ed9, type: 2}
-  laserPointPrefab: {fileID: 6782366602403369761, guid: bd77c2cbd90797e4ca2a97e9a8c1dc31,
-    type: 3}
-  indicatorPrefab: {fileID: 6417632171565950247, guid: 2a39c04f1ea3b0a41b5733bfb0ffbb7b,
-    type: 3}
 --- !u!1 &2116148999
 GameObject:
   m_ObjectHideFlags: 0
