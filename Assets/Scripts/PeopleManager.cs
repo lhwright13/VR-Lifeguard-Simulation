@@ -38,7 +38,7 @@ public class PeopleManager : MonoBehaviour
             }
             else
             {
-                Instantiate(peoplePrefabs[personChoice], spawnPos + new Vector3 (0,-1.4f,0), Quaternion.Euler(rot));
+                Instantiate(peoplePrefabs[personChoice], spawnPos + new Vector3 (0,-1.95f,0), Quaternion.Euler(rot));
             }
         }
     }
