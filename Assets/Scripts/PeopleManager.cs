@@ -14,8 +14,8 @@ public class PeopleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PeopleSpawn(numberLand, landRangeX, landRangeY, landPeoplePrefabs);
-        PeopleSpawn(numberWater, waterRangeX, waterRangeY, swimmerPrefabs);
+        PeopleSpawn(numberLand, landRangeX, landRangeY, landPeoplePrefabs, "land");
+        PeopleSpawn(numberWater, waterRangeX, waterRangeY, swimmerPrefabs, "water");
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class PeopleManager : MonoBehaviour
     {
         
     }
-    void PeopleSpawn(int number, Vector2 xRange, Vector2 yRange, GameObject[] peoplePrefabs)
+    void PeopleSpawn(int number, Vector2 xRange, Vector2 yRange, GameObject[] peoplePrefabs, string type)
     {
         for(int i = 0; i < number; i++)
         {
@@ -38,7 +38,14 @@ public class PeopleManager : MonoBehaviour
             }
             else
             {
-                Instantiate(peoplePrefabs[personChoice], spawnPos + new Vector3 (0,-1.95f,0), Quaternion.Euler(rot));
+                if(type == "land")
+                {
+                    Instantiate(peoplePrefabs[personChoice], spawnPos + new Vector3(0, -1.95f, 0), Quaternion.Euler(rot));
+                }
+                else
+                {
+                    Instantiate(peoplePrefabs[personChoice], spawnPos + new Vector3(0, -3.35f, 0), Quaternion.Euler(rot));
+                }
             }
         }
     }
