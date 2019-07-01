@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
         //turning them green for testing.
         Renderer rend = people[personIndex].GetComponent<Renderer>();
-        rend.material.SetColor("_Color", Color.green);
+        //rend.material.SetColor("_Color", Color.green);
     }
 
 }

@@ -2216,9 +2216,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5824798258680640016}
-  - component: {fileID: 4494545037831282538}
+  - component: {fileID: -3450222544180647668}
+  - component: {fileID: -7120416218370650240}
   m_Layer: 0
-  m_Name: remy
+  m_Name: LandRemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2246,25 +2247,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4494545037831282538
-Animator:
-  serializedVersion: 3
+--- !u!111 &-3450222544180647668
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7390001265896308739}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 0d0357bd789ed1449b8c816769014390, type: 3}
-  m_Controller: {fileID: 9100000, guid: 4a889e6bad699ee42a1cae3b5149c563, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 0}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!65 &-7120416218370650240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7390001265896308739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7401446328443008102
 GameObject:
   m_ObjectHideFlags: 0
