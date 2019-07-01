@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
         //turning them green for testing.
         Animator animator = people[personIndex].GetComponent<Animator>();
         animator.SetBool("drowning", true);
+
+        //turn drowning person toward LG;
+        people[personIndex].transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
     }
 
 }

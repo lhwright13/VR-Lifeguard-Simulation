@@ -906,9 +906,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471830075540989987}
-  - component: {fileID: 7689923555983907663}
   - component: {fileID: -6620857816995136724}
   - component: {fileID: 1577984659103123858}
+  - component: {fileID: -6049799022632591653}
   m_Layer: 0
   m_Name: LandAndromeda
   m_TagString: Untagged
@@ -937,19 +937,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7689923555983907663
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3519315910896753200}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &-6620857816995136724
 Animator:
   serializedVersion: 3
@@ -981,6 +968,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4515b71754529c418cded39ca707ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-6049799022632591653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3519315910896753200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3525942385210601045
 GameObject:
   m_ObjectHideFlags: 0

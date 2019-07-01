@@ -1857,6 +1857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8752027849873385180}
   - component: {fileID: -161993347804997958}
+  - component: {fileID: 2239292758004366359}
   m_Layer: 0
   m_Name: WaterRegina
   m_TagString: Swimmers
@@ -1906,6 +1907,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2239292758004366359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705545252338767055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.4463058, z: 1}
+  m_Center: {x: 0, y: 1.6941, z: 0}
 --- !u!1 &5808597892161878335
 GameObject:
   m_ObjectHideFlags: 0

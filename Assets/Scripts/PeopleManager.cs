@@ -40,7 +40,7 @@ public class PeopleManager : MonoBehaviour
             {
                 if(type == "land")
                 {
-                    Instantiate(peoplePrefabs[personChoice], spawnPos + new Vector3(0, -1.95f, 0), Quaternion.Euler(rot));
+                    Instantiate(peoplePrefabs[personChoice], spawnPos + new Vector3(0, -2f, 0), Quaternion.Euler(rot));
                 }
                 else
                 {
