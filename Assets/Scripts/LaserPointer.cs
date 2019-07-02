@@ -11,6 +11,9 @@ public class LaserPointer : MonoBehaviour
     [SerializeField]
     GameObject laserPointPrefab, indicatorPrefab;
 
+    [SerializeField]
+    GameManager GameManager;
+
 
 
     private GameObject laserPoint;
@@ -55,6 +58,9 @@ public class LaserPointer : MonoBehaviour
                 //if get the click key down 
                 if (hit.transform.gameObject.tag == "Drowning" && notFound)
                 {
+                    //Let game manager know that they have been found
+                    GameManager.DrawnerFound();
+
                     indicator = Instantiate(indicatorPrefab);
                     indicator.transform.position = hit.transform.position + new Vector3(0, 1, 0);
                     //call coroutine in game manager after hit.

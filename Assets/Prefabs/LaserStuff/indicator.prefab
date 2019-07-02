@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6447398321770128485}
   - component: {fileID: 6135985240815750660}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6417632171565950247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3135424, y: -0.33592176, z: 3.6783285}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 37.177, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
