@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vracbeachpatrol.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\lhwright\\Documents\\VRACBeachPatrol\\actions.json",
+      "action_manifest_path": "C:\\Users\\jackm\\Documents\\VRACBeachPatrol\\actions.json",
       "strings": {
         "en_us": {
           "name": "VRACBeachPatrol [Testing]"

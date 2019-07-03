@@ -14,8 +14,8 @@ public class InstructionDisp : MonoBehaviour
     void Start()
     {
        // directionsText.text
-        textMesh = GetComponent<TextMesh>();
-        textMesh.text = "Welcome to the VBP";
+        //textMesh = GetComponent<TextMesh>();
+        //textMesh.text = "Welcome to the VBP";
     }
 
     // Update is called once per frame

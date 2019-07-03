@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //start coroutine for drowning player between 2 and 10 seconds
-        StartCoroutine(display.TextDisplay("Use the trigger to highlight the people in distress."));
+        //StartCoroutine(display.TextDisplay("Use the trigger to highlight the people in distress."));
         Invoke("Drown", Random.Range(2f, 10f));
     }
 
@@ -43,6 +43,6 @@ public class GameManager : MonoBehaviour
     {
         //lets the player move.
         landNav.drawnerFound = true;
-        StartCoroutine(display.TextDisplay("Use the button below your thumb to run to the victim."));
+        //StartCoroutine(display.TextDisplay("Use the button below your thumb to run to the victim."));
     }
 }

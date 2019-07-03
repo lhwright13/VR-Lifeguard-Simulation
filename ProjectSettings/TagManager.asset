@@ -7,6 +7,9 @@ TagManager:
   - Drowning
   - People
   - Swimmers
+  - projectile
+  - FxTemporaire
+  - Water
   layers:
   - Default
   - TransparentFX

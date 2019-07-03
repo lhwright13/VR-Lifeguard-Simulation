@@ -37,7 +37,7 @@ public class LaserPointer : MonoBehaviour
     void Update()
     {
 
-        if (SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch").GetState(GetComponent<Valve.VR.InteractionSystem.Hand>().handType))
+        if (SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch").GetState(GetComponent<SteamVR_Behaviour_Pose>().inputSource))
         {
 
 
