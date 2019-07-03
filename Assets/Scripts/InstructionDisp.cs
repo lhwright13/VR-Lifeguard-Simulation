@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class InstructionDisp : MonoBehaviour
 {
-    private TextMeshPro textMesh;
+    public TextMesh textMesh;
+    [SerializeField]
+    private Text directionsText;
 
     // Start is called before the first frame update
     void Start()
     {
-        textMesh = GetComponent<TMPro.TextMeshPro>();
+       // directionsText.text
+        textMesh = GetComponent<TextMesh>();
         textMesh.text = "Welcome to the VBP";
     }
 
