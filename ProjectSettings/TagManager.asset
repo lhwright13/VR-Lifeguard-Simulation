@@ -13,6 +13,7 @@ TagManager:
   - Head
   - Display
   - Hand
+  - Shark
   layers:
   - Default
   - TransparentFX
