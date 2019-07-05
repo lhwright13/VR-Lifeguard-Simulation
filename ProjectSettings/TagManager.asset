@@ -12,6 +12,7 @@ TagManager:
   - Water
   - Head
   - Display
+  - Hand
   layers:
   - Default
   - TransparentFX

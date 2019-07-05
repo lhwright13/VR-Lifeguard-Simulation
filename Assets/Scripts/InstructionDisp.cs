@@ -10,7 +10,7 @@ public class InstructionDisp : MonoBehaviour
     private Text directionsText;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         directionsText.text = "Welcome to the VBP";
     }
