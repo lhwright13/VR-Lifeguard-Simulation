@@ -61,8 +61,8 @@ public class LaserPointer : MonoBehaviour
                     //Let game manager know that they have been found
                     GameManager.DrawnerFound();
 
-                    indicator = Instantiate(indicatorPrefab, hit.transform);
-                    indicator.transform.position = hit.transform.position + new Vector3(0, 1, 0);
+                    indicator = Instantiate(indicatorPrefab, hit.transform.position, Quaternion.identity);
+                    indicator.transform.position = hit.transform.position + new Vector3(0, 30f, 0);
                     //call coroutine in game manager after hit.
                     notFound = false;
                 }
