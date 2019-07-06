@@ -15,6 +15,7 @@ TagManager:
   - Hand
   - Shark
   - Projectile
+  - Smoke
   layers:
   - Default
   - TransparentFX
