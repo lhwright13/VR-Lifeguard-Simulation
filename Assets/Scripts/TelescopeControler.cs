@@ -6,7 +6,7 @@ using Valve.VR;
 public class TelescopeControler : MonoBehaviour
 {
     [SerializeField]
-    GameObject TelescopePrefab;
+    GameObject TelescopePrefab, BeachBallPrefab;
 
     private GameObject telescope;
 
@@ -24,11 +24,23 @@ public class TelescopeControler : MonoBehaviour
         {
             //if left trigger is hit then build the telescope
             telescope.SetActive(true);
+            if (SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabGrip").GetStateDown(GetComponent<SteamVR_Behaviour_Pose>().inputSource))
+            {
+                GameObject ball = Instantiate(BeachBallPrefab, transform.position - transform.up * 2, transform.rotation);
+                ball.GetComponent<Rigidbody>().AddForce(-transform.up * 10000f);
+                StartCoroutine(DestroyBall(ball));
+            }
         }
         else
         { 
             // else Destroy it
             telescope.SetActive(false);
         }
+    }
+
+    IEnumerator DestroyBall(GameObject ball)
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(ball);
     }
 }

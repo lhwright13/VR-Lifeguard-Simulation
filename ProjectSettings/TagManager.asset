@@ -14,6 +14,7 @@ TagManager:
   - Display
   - Hand
   - Shark
+  - Projectile
   layers:
   - Default
   - TransparentFX
