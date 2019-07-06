@@ -7,7 +7,7 @@ using Valve.VR;
 public class PlayerControler : MonoBehaviour
 {
     public bool drawnerFound = false;
-    public float Speed = 5;
+    public float Speed = 6.5f;
     [SerializeField]
     private GameObject VRcam, hand;
     private bool submerged;

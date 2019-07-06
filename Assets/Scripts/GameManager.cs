@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
     private GameObject[] people;
     public PlayerControler landNav;
     public InstructionDisp display;
+    public  TimeManager timers;
     private GameObject[] smokes;
     bool smokeOn = false;
+
 
     void Start()
     {
@@ -63,11 +65,16 @@ public class GameManager : MonoBehaviour
 
         //turn drowning person toward LG;
         people[personIndex].transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+
+        //this will call the timer for how long it takes to spot the person
+        timers.StartTimeToFind();
     }
     public void DrawnerFound()
     {
         //lets the player move.
         landNav.drawnerFound = true;
+        timers.StopTimerToFind();
+        timers.StartTimeToSave();
         StartCoroutine(display.TextDisplay("Use the button below your thumb to run to the victim."));
     }
 }

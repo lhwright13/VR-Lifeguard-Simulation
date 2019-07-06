@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class IndicatorColorChange : MonoBehaviour
 {
-    private bool saved = false;
+    public TimeManager timers;
+    public bool saved = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +17,10 @@ public class IndicatorColorChange : MonoBehaviour
             animator.SetBool("drowning", false);
             drowner.tag = "Swimmers";
             saved = true;
+
+            GameObject Manager = GameObject.Find("Managers");
+            TimeManager time = (TimeManager)Manager.GetComponent(typeof(TimeManager));
+            time.StopTimerToSave();
         }
     }
 }

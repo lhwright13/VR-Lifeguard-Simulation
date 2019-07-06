@@ -16,6 +16,7 @@ TagManager:
   - Shark
   - Projectile
   - Smoke
+  - Manager
   layers:
   - Default
   - TransparentFX
