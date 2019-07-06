@@ -80,7 +80,8 @@ public class TimeManager : MonoBehaviour
 
         GameObject player = GameObject.FindGameObjectWithTag("Head");
 
-        endText.gameObject.transform.parent.parent.gameObject.transform.position = player.transform.position + player.transform.forward * 3;
+        //endText.gameObject.transform.parent.parent.gameObject.transform.position = player.transform.position + player.transform.forward * 3 + player.transform.up *2;
+        endText.gameObject.transform.parent.parent.gameObject.transform.position = new Vector3(endText.gameObject.transform.parent.parent.gameObject.transform.position.x, 1f, endText.gameObject.transform.parent.parent.gameObject.transform.position.z);
         endText.gameObject.transform.parent.parent.gameObject.transform.rotation = (player.transform.rotation);
     }
 }
