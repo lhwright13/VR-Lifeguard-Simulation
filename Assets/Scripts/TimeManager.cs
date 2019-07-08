@@ -24,7 +24,7 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //endText.gameObject.transform.parent.parent.gameObject.SetActive(false);
+        endText.gameObject.transform.parent.parent.gameObject.SetActive(false);
     }
 
     public void StartTimeToFind()
@@ -81,7 +81,8 @@ public class TimeManager : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Head");
 
         //endText.gameObject.transform.parent.parent.gameObject.transform.position = player.transform.position + player.transform.forward * 3 + player.transform.up *2;
-        endText.gameObject.transform.parent.parent.gameObject.transform.position = new Vector3(endText.gameObject.transform.parent.parent.gameObject.transform.position.x, 1f, endText.gameObject.transform.parent.parent.gameObject.transform.position.z);
-        endText.gameObject.transform.parent.parent.gameObject.transform.rotation = (player.transform.rotation);
+        endText.gameObject.transform.parent.parent.gameObject.transform.position = new Vector3(player.transform.forward.x*3 + player.transform.position.x, 1f,player.transform.forward.z*3 + player.transform.position.z);
+
+        endText.gameObject.transform.parent.parent.gameObject.transform.rotation = Quaternion.Euler(player.transform.rotation.eulerAngles.x, player.transform.rotation.eulerAngles.y, 0);
     }
 }
