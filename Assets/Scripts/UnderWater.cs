@@ -34,6 +34,5 @@
  void SetUnderwater () {
  RenderSettings.fogColor = underwaterColor;
  RenderSettings.fogDensity = 0.1f;
-        print("test");
  }
  }
