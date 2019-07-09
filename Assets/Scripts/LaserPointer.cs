@@ -47,7 +47,7 @@ public class LaserPointer : MonoBehaviour
             RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer
 
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 100f))
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 200f))
             {
                 lineRenderer.SetPosition(0, transform.position);
                 lineRenderer.SetPosition(1, hit.point);
@@ -76,11 +76,11 @@ public class LaserPointer : MonoBehaviour
             else
             {
                 lineRenderer.SetPosition(0, transform.position);
-                lineRenderer.SetPosition(1, transform.position + transform.forward * 100f);
+                lineRenderer.SetPosition(1, transform.position + transform.forward * 200f);
                 lineRenderer.material = laserMaterial;
                 lineRenderer.widthMultiplier = 0.02f;
                 lineRenderer.positionCount = 2;
-                laserPoint.transform.position = transform.position + transform.forward * 100f;
+                laserPoint.transform.position = transform.position + transform.forward * 200f;
             }
         }
         else
